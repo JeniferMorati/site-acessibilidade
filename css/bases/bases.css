@@ -1,0 +1,50 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.rounded {
+	border-radius: 100%;
+}
+
+.bodybg {
+	font-family: 'Roboto';
+	background: #fff;
+	transition: 400ms;
+}
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+}
+
+.footerbg {
+	background: #650396;
+	margin: 0;
+	padding:0;
+	margin-top: 40px;
+	transition: 400ms;
+}
+
+.headerbg {
+	background: #650396;
+	transition: 400ms;
+}
+
+.darkfooter {
+	background: rgb(33, 33, 33);
+	margin: 0;
+	padding:0;
+	margin-top: 40px;
+	transition: 400ms;
+}
+
+.darknav {
+	background: rgb(33, 33, 33);
+	transition: 400ms;
+}
+
+.darkbody {
+	font-family: 'Roboto';
+	background: #1b1b1b;
+	transition: 400ms;
+}

@@ -1,0 +1,147 @@
+.navigationmenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	flex-direction: row;
+}
+
+.navigationmenu > .navitem{
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	position: relative;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.navigationmenu > .logo a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.navigationmenu > .logo .-logoaction {
+	font-weight: bold;
+	color: rgb(255, 92, 5);
+}
+
+.navigationmenu > .logo {
+	font-size: 1.25em;
+}
+
+.navigationmenu > .navitem::after {
+	content: '';
+	background: #fff;
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: left center;
+	transition: 200ms transform linear;
+}
+
+.navigationmenu > .navitem.-active::after {
+	content: '';
+	background: #fff;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	transform: scaleX(0.4);
+	transform-origin: left center;
+}
+
+.navigationmenu > .navitem:hover::after {
+	transform: scaleX(1);
+}
+
+.navigationmenu > .botaoswap {
+	border: none;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+}
+
+.navigationmenu > .botaoswap .indicador {
+	content: '';
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	margin-right: 3px;
+	transform: translateY(-2px);
+	background: #a4a4a4;
+	border-radius: 50px;
+	transition: 400ms;
+}
+
+.navigationmenu > .botaoswap .indicadoron {
+	content: '';
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	margin-right: 3px;
+	transform: translateY(-2px);
+	background: #32ff00;
+	border-radius: 50px;
+	transition: 400ms;
+}
+
+.containerindicador {
+	padding-top: 10px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row; 
+	cursor: pointer;
+}
+
+.indicamenu {
+	height: 20px;
+	width: 20px;
+	padding: 5px;
+	transition: 760ms;
+
+}
+
+.btnfontes {
+	border: 3px solid #fff;
+	font-size: 1.25em;
+	background-color: transparent;
+	font-weight: bold;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+@media(min-width: 700px) {
+	.containerindicador {
+		display: none;
+	}
+}
+
+@media(max-width: 699px) {
+
+	.navigation-projetox {
+		flex-direction: column;
+		padding: 10px 0px 0px 0px;
+	}
+	
+	.fontes {
+		padding: 20px 10px;
+	}
+
+	.navigationmenu > .mobile{
+		flex-direction: column;
+		height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: 500ms ;
+	}
+}

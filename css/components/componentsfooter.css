@@ -1,0 +1,10 @@
+.projetoxdev > .projetoxfooters {
+	color: #fff;
+	font-size: 1.25em;
+	line-height: 30px;
+}
+
+.projetoxdev > .projetoxfooters .projetoxdestaque {
+	color: rgb(255, 92, 5);
+	font-weight: bold;
+}

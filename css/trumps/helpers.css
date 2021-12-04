@@ -1,0 +1,16 @@
+._hideon {
+	display: none !important;
+}
+
+._capOn {
+	background-color: #32ff00 !important;
+}
+
+._deg {
+	transform: rotateZ(180deg);
+}
+
+._ativamenu {
+	height: 100% !important;
+	opacity: 1 !important;
+}

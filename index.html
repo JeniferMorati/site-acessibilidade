@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ProjetoX</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="Shortcut icon" href="img/icons/logo.svg">
+	<link rel="stylesheet" type="text/css" href="css/generic/reset.css">
+	<link rel="stylesheet" href="css/trumps/helpers.css">
+	<link rel="stylesheet" type="text/css" href="css/bases/bases.css">
+	<link rel="stylesheet" type="text/css" href="css/objects/objects.css">
+	<link rel="stylesheet" type="text/css" href="css/components/componentsnavigation.css">
+	<link rel="stylesheet" type="text/css" href="css/components/componentswelcome.css">
+	<link rel="stylesheet" type="text/css" href="css/components/componentsabout.css">
+	<link rel="stylesheet" type="text/css" href="css/components/componentsfooter.css">
+	<link rel="stylesheet" type="text/css" href="css/objects/darkmode-objects.css">
+	<link rel="stylesheet" type="text/css" href="css/components/componentsaboutdark.css">
+	<link rel="stylesheet" type="text/css" href="css/components/componentswelcomedark.css">
+</head>
+
+<body id="webbody" class="bodybg alterafonte">
+	<header id="navbar" class="headerbg">
+		<nav class="navigation-projetox navigationmenu container">
+			<div class="logo">
+				<a href="#" tabindex="-1">My<span class="-logoaction">Portifolio</span></a>
+			</div>
+			<div id="ativamob" class="containerindicador" title="Aperte para abrir menu">
+				<p>Menu</p>
+				<img id="arrowmenu" class="indicamenu" src="img/icons/indicador.svg" alt="Seta indicadora de menu">
+			</div>
+			<div id="navmob" class="navigationmenu mobile">
+				<a class="navitem" href="#" alt="Ir para Inicio" tabindex="1">Inicio</a>
+				<a class="navitem" href="#Sobre" alt="Ir para Sobre" tabindex="2">Sobre</a>
+				<button tabindex="3" class="botaoswap navitem" id="btnaltera"><span id="indica"
+						title="Botao de indicação para tema escuro" class="indicador"
+						alt="Alternar entre modo escuro ou normal"></span>Modo escuro</button>
+				<button class="botaoswap navitem" id="btnacess">
+					<img class="tool" src="img/icons/tools.svg" alt="">
+					Acessibilidade
+				</button>
+				<div class="fontes">
+					<input class="navitem btnfontes" id="aumenta" type="button" value="A+">
+					<input class="navitem btnfontes" id="diminui" type="button" value="A -">
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section id="menuacess" class="acess-menu _hideon">
+			<input id="fechaacces" class="selectmenu" type="button" value="Fechar">
+			<select id="optacces" class="selectmenu" title="Clique para selecionar a ferramenta que deseja">
+				<option id="mapasite">Mapa do site</option>
+			</select>
+			<div class="menu" id="sitemap">
+				<a class="item" href="https://github.com/jenifermorati">Ir para Github</a>
+			</div>
+		</section>
+
+		<section class="welcome-projetox" id="Inico">
+			<div id="filterswap" class="black-filter">
+				<div class="projetoxpai">
+					<hr class="projetoxajuste">
+					<h2 class="projetoxtitle">Bem vindo!</h2>
+					<img class="rounded author-img" src="" id="authorImage" alt="Foto do autor">
+					<span class="projetoxtitle" id="authorName"></span>
+					<p class="projetoxtext">Olá essa é minha página pessoal de projetos e artigos relacionados a
+						programação, minhas habilidades principais são com <span class="destaque">JavaScript</span> e
+						<span class="destaque">TypeScript</span>, aqui o foco é quase total em front-end!
+					</p>
+					<a id="btngit" class="btnprojetox" href="">
+						Ver no GitHub
+					</a>
+					<hr class="projetoxajuste">
+				</div>
+			</div>
+		</section>
+		<section>
+			<h2 id="reposTitle" class="repos-title">Projetos</h2>
+			<div class="repos-section">
+				<div class="repos-container" id="reposContainer"></div>
+			</div>
+		</section>
+	</main>
+
+	<footer id="footerswp" class="footerbg footer-projetox projetoxdev">
+		<p class="projetoxfooters">My<span class="projetoxdestaque">Portifolio</span></p>
+		<p class="projetoxfooters">Desenvolvido por: Jenifer Morati</p>
+	</footer>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/scriptprojectx.js"></script>
+</body>
+
+</html>

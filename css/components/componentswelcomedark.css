@@ -1,0 +1,36 @@
+.projetoxpai > .btnprojetoxdark {
+	border: solid 1px #fff;
+	border-radius: 5px;
+	padding: 10px;
+	background: #070707;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 40px;
+	transition: 400ms;
+}
+
+.darktitle {
+	color: rgba(255, 128, 0) !important;
+}
+
+.darksubtitle {
+	color: #fff !important;
+}
+
+.darkinput::placeholder {
+	color: #fff !important;
+}
+
+.darkinput {
+	border-bottom: 3px solid rgb(255, 128, 0) !important;
+}
+
+.darkmsg {
+	border: 3px solid rgb(255, 128, 0) !important;
+	color: #fff !important;
+}
+
+.darkbg{
+	background-color: rgb(255, 128, 0);
+	color: #000;
+}
